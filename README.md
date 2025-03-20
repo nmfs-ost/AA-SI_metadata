@@ -22,4 +22,4 @@ Metadata that are extracted from the CON0 header for each .raw file. Every file 
 |BeamType|CON0:ConfigurationTransducer|The beam type. 0=single beam. 1=split beam.|NA|NA|EK60[^2]|
 |Frequency|CON0:ConfigurationTransducer|The transmit frequency of the channel in Hz.|NA|NA|EK60[^2]|
 |PulseLengthTable|CON0:ConfigurationTransducer|List of possible pulse durations in seconds. Do we need this?|NA|NA|EK60[^2]|
-[^2]: [EK60 Data Formats](https://github.com/nmfs-ost/AA-SI_metadata/blob/main/EK60_reference_manual_data-formats.pdf#page=15)
+[^2]: [EK60 Data Formats](https://github.com/nmfs-ost/AA-SI_metadata/blob/main/EK60_reference_manual_data-formats.pdf)
