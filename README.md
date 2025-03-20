@@ -6,6 +6,7 @@ Metadata that are extracted from the CON0 header for each .raw file. The <con0> 
 | Variable                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
 |--------------------------------------|---------|-------------|--------|--------------|------------|
 |test|CON0|test variable|NA|NA|1|
+1. [EK80 Data Formats](https://github.com/nmfs-ost/AA-SI_metadata/blob/main/ek80_interface_en_us_file-formats.pdf)  
 
 ## Kongsberg EK60 Metadata
 ### CON0
