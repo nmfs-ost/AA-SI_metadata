@@ -1,9 +1,16 @@
 # AA-SI_metadata
 The AA-SI is developing a metadata database that will assist with searching, querying, and accessing acoustic data from NCEI, on-premise, and OMAO storage. We anticipate expanding this database to contextual data.
+| Attribute                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
+|--------------------------------------|---------|-------------|--------|--------------|------------|
+|mission_name|OMAO Cruise Instructions|The cruise identifier. In NOAA, it is often a two-character ship identifier, two-digit year, and two-digit sequential cruise number for that ship. For example, the third cruise on the Henry B Bigelow in 2025 is HB2503. We typically use "cruise", whereas AcMeta uses "mission".|mission_name|NA|AcMeta[^3][^4]|
+|||||NA|AcMeta[^3][^4]|
+
+[^3]: [AcMeta](https://github.com/ices-publications/AcMeta)
+[^4]: [AcMeta IO page](https://htmlpreview.github.io/?https://github.com/ices-publications/AcMeta/blob/master/Formatted_docs/TG-AcMeta.html)  
 
 ## Kongsberg EK80 Metadata
 Metadata that are extracted from the \<Configuration\> XML header for each .raw file. The \<Configuration\> section contains information pertinent to the data file as a whole.
-| Variable                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
+| Attribute                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
 |--------------------------------------|---------|-------------|--------|--------------|------------|
 |test|CON0|test variable|NA|NA|EK80[^1]|
 [^1]: [EK80 Data Formats](https://github.com/nmfs-ost/AA-SI_metadata/blob/main/ek80_interface_en_us_file-formats.pdf)  
@@ -11,7 +18,7 @@ Metadata that are extracted from the \<Configuration\> XML header for each .raw 
 ## Kongsberg EK60 Metadata
 ### CON0
 Metadata that are extracted from the CON0 header for each .raw file. Every file has a CON0 telegram at the beginning of the file, which contains information pertinent to the data file as a whole.
-| Variable                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
+| Attribute                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
 |--------------------------------------|---------|-------------|--------|--------------|------------|
 |ConfigurationTransducer|CON0:ConfigurationDatagram|I'm not sure this is read?|NA|NA|EK60[^2]|
 |SurveyName|CON0:ConfigurationHeader|Cruise/Survey Name/ID. Input by the user. The data string may or may not exist depending on whether it was input by the user.|NA|NA|EK60[^2]|
