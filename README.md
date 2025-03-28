@@ -6,6 +6,7 @@ We separate our metadata into to general categories: **project** and **file**. T
 For a number of attributes, we will need to define controlled vocabulary and/or follow [ICES controlled vocabulary](https://vocab.ices.dk/?ref=311). This may entail creating lookup tables.
 
 ## Project Attributes
+The AcMeta column provides the AcMeta attribute table:attribute. For example, mission_name is a metadata attribute described in the Mission Attributes table (Mission:mission_name). 
 | Attribute                             | Source  | Description | AcMeta | SonarnetCDF4 | References |
 |--------------------------------------|---------|-------------|--------|--------------|------------|
 |mission_name|OMAO cruise instructions or NCEI Cruisepack|The full name for the program/project that was responsible for collecting the data.|Mission: mission_name|NA|AcMeta[^3][^4]|
